@@ -1,10 +1,16 @@
 var c1=0,c2=0,c3=0;
 var r;
 var cnt=0;
+$("#b2").hide();
+$("#container").hide();
+
 function selectRound(){
   r=document.getElementById("round").value;
   $("#hide").hide();
   $("#winner").show();
+  $("#b2").show();
+  $("#container").show();
+
 }
 
  function play()
@@ -20,16 +26,15 @@ function selectRound(){
         num2=num2+1;
         if(num1>num2){
            c1++;
-           document.getElementById("winner").innerHTML="Player1 :"+c1+"!!! Player2 :"+c2+"!!!";
+           document.getElementById("winner").innerHTML="Player1 :"+c1+"           Player2 :"+c2;
           
         }
         else if(num1<num2){
             c2++;
-            document.getElementById("winner").innerHTML="Player1 :"+c1+"!!! Player2 :"+c2+"!!!";           //document.getElementById("points").innerHTML=c2;           
-          
+            document.getElementById("winner").innerHTML="Player1 :"+c1+"          Player2 :"+c2;                    
         }
         else{
-            document.getElementById("winner").innerHTML="Player1 :"+c1+"!!! Player2 :"+c2+"!!!";
+            document.getElementById("winner").innerHTML="Player1 :"+c1+"          Player2 :"+c2;
             c3++;
         }
         var p1="images/dice"+num1+".png";
@@ -50,6 +55,8 @@ function selectRound(){
               $("#round").val("");  
               setTimeout(function(){
                 $("#winner").hide();
+                $("#b2").hide();
+
               },2000);    
             }
           },2000); 
