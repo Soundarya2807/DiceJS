@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICE </title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body bgcolor="#E6E6FA">
+    <center><h1>ROLL THE DICE</h1><br>
+    <div id="hide"><h3>Enter the Rounds:</h3><input type="text" id="round" align="left" style="color : royalblue;font-family: cursive;" maxlength="2"/>
+    <button onclick="selectRound()" class="button button2">OK</button></div>
+
+    <h2>Player 1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Player 2</h2>
+    <img src="images/dice1.png" alt="dice1" id="s1" width=10% height=10% >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="images/dice1.png" alt="dice1" id="s2" width=10% height=10%><br><br>
+    <button onclick="play()" class="button button2" id="b2">Play</button></center>
+    <h2 id="container" align="center">Let's Start!!!</h2>
+    <img src="images/dicegif.gif" alt="gif" align="right" width=10% height=10%>
+    <img src="images/dicegif.gif" alt="gif" align="left" width=10% height=10%>
+    <h2 align="center"><p id="winner"></p></h2>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="Script/index.js"></script>
+</body>
+</html>
